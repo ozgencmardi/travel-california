@@ -84,7 +84,7 @@ section h2 {
 }
 
 .masthead {
-  height: 900px;
+  height: 100%;
   align-items: center;
 }
 
@@ -94,6 +94,10 @@ section h2 {
 
 .masthead strong {
   font-weight: 600;
+}
+
+.masthead .display-4 {
+  padding: 10px;
 }
 
 .margin-top {
@@ -108,6 +112,7 @@ section h2 {
   width: 220px;
   text-transform: uppercase;
   font-size: 12px;
+  margin-left: 20px;
 }
 
 .masthead button:hover {
@@ -121,8 +126,8 @@ section h2 {
 }
 
 .screen img {
-  max-width: 400px;
   width: 100%;
+  padding: 20px;
 }
 
 .download {
@@ -196,10 +201,6 @@ section h2 {
 
 .card {
   height: 200px;
-}
-
-.card {
-  height: 200px;
   align-items: center;
   text-align: center;
   padding: 30px;
@@ -235,4 +236,83 @@ footer {
 
 footer h3 {
   font-size: 16px;
+}
+
+/*---Media Queries --*/
+@media (max-width: 992px) {
+
+}
+@media (max-width: 768px) {
+
+}
+@media (max-width: 576px) {
+
+  .navbar-brand {
+    font-size: 28px;
+  }
+
+  .masthead h1 {
+    color: #fff;
+    font-size: 20px;
+    text-align: center !important;
+  }
+  
+  .masthead strong {
+    font-weight: 600;
+  }
+  
+  .margin-top {
+    margin-top: -20px !important;
+  }
+
+  .masthead button {
+    margin-top: 0px !important;
+    text-align: center !important;
+  }
+
+  .screen img {
+    width: 100%;
+    max-width: 180px;
+    text-align: center !important;
+    margin-top: -30px !important;
+  }
+
+  .download {
+    margin-top: -85px !important;
+  }
+
+  .download h2 {
+    font-size: 30px !important;
+  }
+
+  .download img {
+    width: 100px;
+  }
+
+  .testimonials h2 {
+    font-size: 30px;
+  }
+
+  .signup-section h2 {
+    font-size: 30px;
+  }
+
+  .signup-section input {
+    padding: 12px;
+    width: 300px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+  }
+
+  .contact-section {
+    height: 750px;
+  }
+  
+  .card {
+    height: 150px;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
 }
